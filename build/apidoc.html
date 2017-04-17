@@ -1,0 +1,676 @@
+<div class="apidocDiv">
+<style>
+/*csslint
+*/
+.apidocDiv {
+    background: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.apidocDiv a[href] {
+    color: #33f;
+    font-weight: bold;
+    text-decoration: none;
+}
+.apidocDiv a[href]:hover {
+    text-decoration: underline;
+}
+.apidocCodeCommentSpan {
+    background: #bbf;
+    color: #000;
+    display: block;
+}
+.apidocCodeKeywordSpan {
+    color: #d00;
+    font-weight: bold;
+}
+.apidocCodePre {
+    background: #eef;
+    border: 1px solid;
+    color: #777;
+    padding: 5px;
+    white-space: pre-wrap;
+}
+.apidocFooterDiv {
+    margin-top: 20px;
+    text-align: center;
+}
+.apidocModuleLi {
+    margin-top: 10px;
+}
+.apidocSectionDiv {
+    border-top: 1px solid;
+    margin-top: 20px;
+}
+.apidocSignatureSpan {
+    color: #777;
+    font-weight: bold;
+}
+</style>
+<h1>api documentation for
+    <a
+
+        href="https://github.com/mikeal/filed#readme"
+
+    >filed (v0.1.0)</a>
+</h1>
+<h4>Simplified file library.</h4>
+<div class="apidocSectionDiv"><a
+    href="#apidoc.tableOfContents"
+    id="apidoc.tableOfContents"
+><h1>table of contents</h1></a><ol>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.filed">module filed</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.filed">
+            function <span class="apidocSignatureSpan"></span>filed
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.File">
+            function <span class="apidocSignatureSpan">filed.</span>File
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.main">
+            function <span class="apidocSignatureSpan">filed.</span>main
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.toString">
+            function <span class="apidocSignatureSpan">filed.</span>toString
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">filed.</span>File.prototype</span>
+
+        </li>
+
+        <li>
+
+            <span class="apidocSignatureSpan">object <span class="apidocSignatureSpan">filed.</span>rfc822</span>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.filed.File">module filed.File</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.File.File">
+            function <span class="apidocSignatureSpan">filed.</span>File
+            <span class="apidocSignatureSpan">(options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.File.super_">
+            function <span class="apidocSignatureSpan">filed.File.</span>super_
+            <span class="apidocSignatureSpan">()</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.filed.File.prototype">module filed.File.prototype</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.File.prototype.end">
+            function <span class="apidocSignatureSpan">filed.File.prototype.</span>end
+            <span class="apidocSignatureSpan">(chunk)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.File.prototype.pipe">
+            function <span class="apidocSignatureSpan">filed.File.prototype.</span>pipe
+            <span class="apidocSignatureSpan">(dest, options)</span>
+            </a>
+
+        </li>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.File.prototype.write">
+            function <span class="apidocSignatureSpan">filed.File.prototype.</span>write
+            <span class="apidocSignatureSpan">(chunk, encoding)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+    <li class="apidocModuleLi"><a href="#apidoc.module.filed.rfc822">module filed.rfc822</a><ol>
+
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.filed.rfc822.getRFC822Date">
+            function <span class="apidocSignatureSpan">filed.rfc822.</span>getRFC822Date
+            <span class="apidocSignatureSpan">(oDate)</span>
+            </a>
+
+        </li>
+
+    </ol></li>
+
+</ol></div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.filed" id="apidoc.module.filed">module filed</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.filed.filed" id="apidoc.element.filed.filed">
+        function <span class="apidocSignatureSpan"></span>filed
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">filed = function (options) {
+  return new File(options)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.filed.File" id="apidoc.element.filed.File">
+        function <span class="apidocSignatureSpan">filed.</span>File
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function File(options) {
+  stream.Stream.call(this)
+
+  this.writable = true
+  this.readable = true
+  this.buffers = []
+
+  var self = this
+
+  if (typeof options === &#x27;string&#x27;) options = {path:options}
+  if (!options.index) options.index = &#x27;index.html&#x27;
+  self.writable = (typeof options.writable === &#x22;undefined&#x22;) ? true : options.writable
+  self.readable = (typeof options.readable === &#x22;undefined&#x22;) ? true : options.readable
+
+  self.path = options.path
+  self.index = options.index
+
+  self.on(&#x27;pipe&#x27;, function (src) {
+    this.src = src
+  })
+
+  this.buffering = true
+
+  this.mimetype = options.mimetype || mime.lookup(this.path.slice(this.path.lastIndexOf(&#x27;.&#x27;)+1))
+
+  var stopBuffering = function () {
+    self.buffering = false
+    while (self.buffers.length) {
+      self.emit(&#x27;data&#x27;, self.buffers.shift())
+    }
+    if (self.ended) self.emit(&#x27;end&#x27;)
+  }
+
+  fs.stat(options.path, function (err, stats) {
+
+    var finish = function (err, stats) {
+      self.stat = stats
+      if (err &#x26;&#x26; err.code === &#x27;ENOENT&#x27; &#x26;&#x26; !self.dest &#x26;&#x26; !self.src) self.src = self.path
+      if (err &#x26;&#x26; !self.dest &#x26;&#x26; !self.src) return self.emit(&#x27;error&#x27;, err)
+      if (err &#x26;&#x26; self.dest &#x26;&#x26; !self.dest.writeHead) return self.emit(&#x27;error&#x27;, err)
+
+      // See if writes are disabled
+      if (self.src &#x26;&#x26; self.src.method &#x26;&#x26;
+          !self.writable &#x26;&#x26; self.dest.writeHead &#x26;&#x26;
+          (self.src.method === &#x27;PUT&#x27; || self.src.method === &#x27;POST&#x27;)) {
+        self.dest.writeHead(405, {&#x27;content-type&#x27;:&#x27;text/plain&#x27;})
+        self.dest.end(self.src.method+&#x27; Not Allowed&#x27;)
+        return
+      }
+
+      if (!err) {
+        self.etag = crypto.createHash(&#x27;md5&#x27;).update(stats.ino+&#x27;/&#x27;+stats.mtime+&#x27;/&#x27;+stats.size).digest(&#x22;hex&#x22;)
+        self.lastmodified = rfc822.getRFC822Date(stats.mtime)
+      }
+
+      process.nextTick(function () {
+        stopBuffering()
+      })
+
+      // 404 and 500
+      if ( err &#x26;&#x26; self.dest &#x26;&#x26; self.dest.writeHead &#x26;&#x26; // We have an error object and dest is an HTTP response
+           ( // Either we have a source and it&#x27;s a GET/HEAD or we don&#x27;t have a src
+             (self.src &#x26;&#x26; (self.src.method == &#x27;GET&#x27; || self.src.method === &#x27;HEAD&#x27;)) || (!self.src)
+           )
+         ) {
+        if (err.code === &#x27;ENOENT&#x27;) {
+          self.dest.statusCode = 404
+          self.dest.end(&#x27;Not Found&#x27;)
+        } else {
+          self.dest.statusCode = 500
+          self.dest.end(err.message)
+        }
+        return
+      }
+
+      // Source is an HTTP Server Request
+      if (self.src &#x26;&#x26; (self.src.method === &#x27;GET&#x27; || self.src.method === &#x27;HEAD&#x27;) &#x26;&#x26; self.dest) {
+        if (self.dest.setHeader) {
+          self.dest.setHeader(&#x27;content-type&#x27;, self.mimetype)
+          self.dest.setHeader(&#x27;etag&#x27;, self.etag)
+          self.dest.setHeader(&#x27;last-modified&#x27;, self.lastmodified)
+        }
+
+        if (self.dest.writeHead) {
+          if (self.src &#x26;&#x26; self.src.headers) {
+            if (self.src.headers[&#x27;if-none-match&#x27;] === self.etag ||
+                // Lazy last-modifed matching but it&#x27;s faster than parsing Datetime
+                self.src.headers[&#x27;if-modified-since&#x27;] === self.lastmodified) {
+              self.dest.statusCode = 304
+              self.dest.end()
+              return
+            }
+          }
+          // We&#x27;re going to return the whole file
+          self.dest.statusCode = 200
+          self.dest.setHeader(&#x27;content-length&#x27;, stats.size)
+        } else {
+          // Destination is not an HTTP response, GET and HEAD method are not allowed
+          return
+        }
+
+        if (self.src.method !== &#x27;HEAD&#x27;) {
+          fs.createReadStream(self.path).pipe(self.dest)
+        }
+        return
+      }
+
+      if (self.src &#x26;&#x26; (self.src.method === &#x27;PUT&#x27; || self.src.method === &#x27;POST&#x27;)) {
+        if (!err) {
+          // TODO handle overwrite case
+          return
+        }
+        stream.Stream.prototype.pipe.call(self, fs.createWriteStream(self.path))
+        if (self.dest &#x26;&#x26; self.dest.writeHead) {
+          self.on(&#x27;end&#x27;, function () {
+            self.dest.statusCode = 201
+            self.dest.setHeader(&#x27;content-length&#x27;, 0)
+            self.dest.end()
+          })
+        } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.filed.main" id="apidoc.element.filed.main">
+        function <span class="apidocSignatureSpan">filed.</span>main
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">main = function (options) {
+  return new File(options)
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.filed.toString" id="apidoc.element.filed.toString">
+        function <span class="apidocSignatureSpan">filed.</span>toString
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">toString = function () {
+    return text;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.filed.File" id="apidoc.module.filed.File">module filed.File</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.filed.File.File" id="apidoc.element.filed.File.File">
+        function <span class="apidocSignatureSpan">filed.</span>File
+        <span class="apidocSignatureSpan">(options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function File(options) {
+  stream.Stream.call(this)
+
+  this.writable = true
+  this.readable = true
+  this.buffers = []
+
+  var self = this
+
+  if (typeof options === &#x27;string&#x27;) options = {path:options}
+  if (!options.index) options.index = &#x27;index.html&#x27;
+  self.writable = (typeof options.writable === &#x22;undefined&#x22;) ? true : options.writable
+  self.readable = (typeof options.readable === &#x22;undefined&#x22;) ? true : options.readable
+
+  self.path = options.path
+  self.index = options.index
+
+  self.on(&#x27;pipe&#x27;, function (src) {
+    this.src = src
+  })
+
+  this.buffering = true
+
+  this.mimetype = options.mimetype || mime.lookup(this.path.slice(this.path.lastIndexOf(&#x27;.&#x27;)+1))
+
+  var stopBuffering = function () {
+    self.buffering = false
+    while (self.buffers.length) {
+      self.emit(&#x27;data&#x27;, self.buffers.shift())
+    }
+    if (self.ended) self.emit(&#x27;end&#x27;)
+  }
+
+  fs.stat(options.path, function (err, stats) {
+
+    var finish = function (err, stats) {
+      self.stat = stats
+      if (err &#x26;&#x26; err.code === &#x27;ENOENT&#x27; &#x26;&#x26; !self.dest &#x26;&#x26; !self.src) self.src = self.path
+      if (err &#x26;&#x26; !self.dest &#x26;&#x26; !self.src) return self.emit(&#x27;error&#x27;, err)
+      if (err &#x26;&#x26; self.dest &#x26;&#x26; !self.dest.writeHead) return self.emit(&#x27;error&#x27;, err)
+
+      // See if writes are disabled
+      if (self.src &#x26;&#x26; self.src.method &#x26;&#x26;
+          !self.writable &#x26;&#x26; self.dest.writeHead &#x26;&#x26;
+          (self.src.method === &#x27;PUT&#x27; || self.src.method === &#x27;POST&#x27;)) {
+        self.dest.writeHead(405, {&#x27;content-type&#x27;:&#x27;text/plain&#x27;})
+        self.dest.end(self.src.method+&#x27; Not Allowed&#x27;)
+        return
+      }
+
+      if (!err) {
+        self.etag = crypto.createHash(&#x27;md5&#x27;).update(stats.ino+&#x27;/&#x27;+stats.mtime+&#x27;/&#x27;+stats.size).digest(&#x22;hex&#x22;)
+        self.lastmodified = rfc822.getRFC822Date(stats.mtime)
+      }
+
+      process.nextTick(function () {
+        stopBuffering()
+      })
+
+      // 404 and 500
+      if ( err &#x26;&#x26; self.dest &#x26;&#x26; self.dest.writeHead &#x26;&#x26; // We have an error object and dest is an HTTP response
+           ( // Either we have a source and it&#x27;s a GET/HEAD or we don&#x27;t have a src
+             (self.src &#x26;&#x26; (self.src.method == &#x27;GET&#x27; || self.src.method === &#x27;HEAD&#x27;)) || (!self.src)
+           )
+         ) {
+        if (err.code === &#x27;ENOENT&#x27;) {
+          self.dest.statusCode = 404
+          self.dest.end(&#x27;Not Found&#x27;)
+        } else {
+          self.dest.statusCode = 500
+          self.dest.end(err.message)
+        }
+        return
+      }
+
+      // Source is an HTTP Server Request
+      if (self.src &#x26;&#x26; (self.src.method === &#x27;GET&#x27; || self.src.method === &#x27;HEAD&#x27;) &#x26;&#x26; self.dest) {
+        if (self.dest.setHeader) {
+          self.dest.setHeader(&#x27;content-type&#x27;, self.mimetype)
+          self.dest.setHeader(&#x27;etag&#x27;, self.etag)
+          self.dest.setHeader(&#x27;last-modified&#x27;, self.lastmodified)
+        }
+
+        if (self.dest.writeHead) {
+          if (self.src &#x26;&#x26; self.src.headers) {
+            if (self.src.headers[&#x27;if-none-match&#x27;] === self.etag ||
+                // Lazy last-modifed matching but it&#x27;s faster than parsing Datetime
+                self.src.headers[&#x27;if-modified-since&#x27;] === self.lastmodified) {
+              self.dest.statusCode = 304
+              self.dest.end()
+              return
+            }
+          }
+          // We&#x27;re going to return the whole file
+          self.dest.statusCode = 200
+          self.dest.setHeader(&#x27;content-length&#x27;, stats.size)
+        } else {
+          // Destination is not an HTTP response, GET and HEAD method are not allowed
+          return
+        }
+
+        if (self.src.method !== &#x27;HEAD&#x27;) {
+          fs.createReadStream(self.path).pipe(self.dest)
+        }
+        return
+      }
+
+      if (self.src &#x26;&#x26; (self.src.method === &#x27;PUT&#x27; || self.src.method === &#x27;POST&#x27;)) {
+        if (!err) {
+          // TODO handle overwrite case
+          return
+        }
+        stream.Stream.prototype.pipe.call(self, fs.createWriteStream(self.path))
+        if (self.dest &#x26;&#x26; self.dest.writeHead) {
+          self.on(&#x27;end&#x27;, function () {
+            self.dest.statusCode = 201
+            self.dest.setHeader(&#x27;content-length&#x27;, 0)
+            self.dest.end()
+          })
+        } ...</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.filed.File.super_" id="apidoc.element.filed.File.super_">
+        function <span class="apidocSignatureSpan">filed.File.</span>super_
+        <span class="apidocSignatureSpan">()</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function Stream() {
+  EE.call(this);
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.filed.File.prototype" id="apidoc.module.filed.File.prototype">module filed.File.prototype</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.filed.File.prototype.end" id="apidoc.element.filed.File.prototype.end">
+        function <span class="apidocSignatureSpan">filed.File.prototype.</span>end
+        <span class="apidocSignatureSpan">(chunk)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">end = function (chunk) {
+  if (chunk) this.write(chunk)
+  if (this.buffering) {
+    this.ended = true
+  } else {
+    this.emit(&#x27;end&#x27;)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+
+Filed does a lazy stat call so you can actually open a file and begin writing to it and if the file isn&#x27;t there it will just
+ be created.
+
+```javascript
+var filed = require(&#x27;filed&#x27;);
+var f = filed(&#x27;/newfile&#x27;)
+f.write(&#x27;test&#x27;)
+f.<span class="apidocCodeKeywordSpan">end</span>()
+```
+
+## Streaming
+
+The returned file object is a stream so you can do standard stream stuff to it. Based on *what* you do the object it will be a read
+ stream, a write stream.
+
+So if you send data to it, it&#x27;ll be a write stream.
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.filed.File.prototype.pipe" id="apidoc.element.filed.File.prototype.pipe">
+        function <span class="apidocSignatureSpan">filed.File.prototype.</span>pipe
+        <span class="apidocSignatureSpan">(dest, options)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">pipe = function (dest, options) {
+  this.dest = dest
+  this.destOptions = options
+  dest.emit(&#x27;pipe&#x27;, this)
+  // stream.Stream.prototype.pipe.call(this, dest, options)
+  return dest
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Streaming
+
+The returned file object is a stream so you can do standard stream stuff to it. Based on *what* you do the object it will be a read
+ stream, a write stream.
+
+So if you send data to it, it&#x27;ll be a write stream.
+
+```javascript
+fs.createReadStream.<span class="apidocCodeKeywordSpan">pipe</span>(filed(&#x27;/newfile&#x27;))
+```
+
+If you pipe it to a destination it&#x27;ll be a read stream.
+
+```javascript
+filed(&#x27;/myfile&#x27;).pipe(fs.createWriteStream(&#x27;/out&#x27;))
+```
+...</pre></li>
+    </ul>
+
+
+
+    <h2>
+        <a href="#apidoc.element.filed.File.prototype.write" id="apidoc.element.filed.File.prototype.write">
+        function <span class="apidocSignatureSpan">filed.File.prototype.</span>write
+        <span class="apidocSignatureSpan">(chunk, encoding)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">write = function (chunk, encoding) {
+  if (encoding) chunk = chunk.toString(encoding)
+  if (this.buffering) {
+    this.buffers.push(chunk)
+  } else {
+    this.emit(&#x27;data&#x27;, chunk)
+  }
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">...
+## Super simple to use
+
+Filed does a lazy stat call so you can actually open a file and begin writing to it and if the file isn&#x27;t there it will just
+ be created.
+
+```javascript
+var filed = require(&#x27;filed&#x27;);
+var f = filed(&#x27;/newfile&#x27;)
+f.<span class="apidocCodeKeywordSpan">write</span>(&#x27;test&#x27;)
+f.end()
+```
+
+## Streaming
+
+The returned file object is a stream so you can do standard stream stuff to it. Based on *what* you do the object it will be a read
+ stream, a write stream.
+...</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocSectionDiv">
+<h1><a href="#apidoc.module.filed.rfc822" id="apidoc.module.filed.rfc822">module filed.rfc822</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.filed.rfc822.getRFC822Date" id="apidoc.element.filed.rfc822.getRFC822Date">
+        function <span class="apidocSignatureSpan">filed.rfc822.</span>getRFC822Date
+        <span class="apidocSignatureSpan">(oDate)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">function getRFC822Date(oDate)
+{
+  var aMonths = new Array(&#x22;Jan&#x22;, &#x22;Feb&#x22;, &#x22;Mar&#x22;, &#x22;Apr&#x22;, &#x22;May&#x22;, &#x22;Jun&#x22;,
+                          &#x22;Jul&#x22;, &#x22;Aug&#x22;, &#x22;Sep&#x22;, &#x22;Oct&#x22;, &#x22;Nov&#x22;, &#x22;Dec&#x22;);
+
+  var aDays = new Array( &#x22;Sun&#x22;, &#x22;Mon&#x22;, &#x22;Tue&#x22;, &#x22;Wed&#x22;, &#x22;Thu&#x22;, &#x22;Fri&#x22;, &#x22;Sat&#x22;);
+  var dtm = new String();
+
+  dtm = aDays[oDate.getDay()] + &#x22;, &#x22;;
+  dtm += padWithZero(oDate.getDate()) + &#x22; &#x22;;
+  dtm += aMonths[oDate.getMonth()] + &#x22; &#x22;;
+  dtm += oDate.getFullYear() + &#x22; &#x22;;
+  dtm += padWithZero(oDate.getHours()) + &#x22;:&#x22;;
+  dtm += padWithZero(oDate.getMinutes()) + &#x22;:&#x22;;
+  dtm += padWithZero(oDate.getSeconds()) + &#x22; &#x22; ;
+  dtm += getTZOString(oDate.getTimezoneOffset());
+  return dtm;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
+
+</div>
+
+<div class="apidocFooterDiv">
+    [ this document was created with
+    <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a>
+    ]
+</div>
+</div>
