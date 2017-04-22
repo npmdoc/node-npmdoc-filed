@@ -1,4 +1,7 @@
-# api documentation for  [filed (v0.1.0)](https://github.com/mikeal/filed#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-filed.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-filed) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-filed.svg)](https://travis-ci.org/npmdoc/node-npmdoc-filed)
+# npmdoc-filed
+
+#### api documentation for  [filed (v0.1.0)](https://github.com/mikeal/filed#readme)  [![npm package](https://img.shields.io/npm/v/npmdoc-filed.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-filed) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-filed.svg)](https://travis-ci.org/npmdoc/node-npmdoc-filed)
+
 #### Simplified file library.
 
 [![NPM](https://nodei.co/npm/filed.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/filed)
@@ -54,7 +57,8 @@
     "scripts": {
         "test": "node test/test.js"
     },
-    "version": "0.1.0"
+    "version": "0.1.0",
+    "bin": {}
 }
 ```
 
